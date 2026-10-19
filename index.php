@@ -3,6 +3,7 @@
 require_once "src/Planta.php";
 
 $planta = new Planta("Suculenta", "Echeveria elegans", 15);
+$planta->setNome("Rosa")
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
