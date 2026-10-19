@@ -1,7 +1,9 @@
-<!-- 
-Importe a classe Planta.
-Crie um objeto da classe Planta.
-Utilize os dados informados no enunciado. -->
+<?php
+
+require_once "src/Planta.php";
+
+$planta = new Planta("Suculenta", "Echeveria elegans", 15);
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -24,14 +26,14 @@ Utilize os dados informados no enunciado. -->
         <section class="cartao">
 
             <h2>
-                <!-- Exiba o nome popular da planta. -->
+                <?= $planta->getNome() ?>
             </h2>
 
             <div class="informacao">
                 <span class="rotulo">Espécie científica</span>
 
                 <span class="valor">
-                    <!-- Exiba a espécie. -->
+                    <?= $planta->getEspecie() ?>
                 </span>
             </div>
 
@@ -39,7 +41,7 @@ Utilize os dados informados no enunciado. -->
                 <span class="rotulo">Água recomendada por dia</span>
 
                 <span class="valor">
-                    <!-- Exiba a quantidade diária em ml. -->
+                     <?= $planta->getAguaPorDia() ?> ml
                 </span>
             </div>
 
@@ -47,7 +49,7 @@ Utilize os dados informados no enunciado. -->
                 <strong>Recomendação para sete dias</strong>
 
                 <p>
-                    <!-- Exiba a quantidade calculada para sete dia -->
+                      <?= $planta->calcularAguaSemanal() ?> ml
                 </p>
             </div>
 
