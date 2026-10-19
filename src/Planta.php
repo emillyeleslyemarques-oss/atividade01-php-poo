@@ -30,4 +30,20 @@ class Planta
     {
         return $this->aguaPorDia * 7;
     }
+
+    public function setNome(string $nome): void
+    {
+        $this->nome = $nome;
+    }
+
+    public function setEspecie(string $especie): void
+    {
+        $this->especie = $especie;
+    }
+
+    public function setAguaPorDia(int $aguaPorDia): void
+    {
+        $this->aguaPorDia = $aguaPorDia;
+    }
+    
 }
